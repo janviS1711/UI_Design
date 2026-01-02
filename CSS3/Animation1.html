@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes anim {/*It is used to move an object from one place to another*/
+            from{left:0px; top:0px;}
+            to{left:800px; top:200px;}
+            /*to{left:800px; top:0px;}*/
+        }
+        .cir{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: blueviolet;
+            animation:anim 2s;/*We called our keyframe by the given name*/
+            position: relative;
+            animation-iteration-count: 3;/*This will move the object 3 times from its place */
+        }
+    </style>
+</head>
+<body>
+    <div class="cir"></div>
+</body>
+</html>

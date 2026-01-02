@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .First{
+            width:1000px;
+            height:200px;
+            background-color:yellowgreen;
+
+        }
+        .Second{
+            width:1000px;
+            height:100px;
+            background-color:green;
+        }
+        .Third{
+            width:500px;
+            height:500px;
+            background-color:yellow;
+            float: left;/*As division is a block element it takes thr full width so we need to use float  */
+        }
+        .Fourth{
+            width:500px;
+            height:500px;
+            background-color:rebeccapurple;
+            float: right;/* right means right side od the screen and left means left side of the screen so we use container to remove the space between 2 divisions*/
+        }
+        .container{/* We use container to join both the divisions or to remove the space between the divisions.*/
+            width:1000px;
+            height:auto;
+            margin:auto;
+        }
+        .Footer{
+            width:1000px;
+            height:80px;
+            background-color:rgb(246, 103, 8);
+            text-align: center;
+            clear:both;/*It is used to remove the float for the next division as it is extended to the end of the container*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="First">First Division</div>
+        <div class="Second">Second Division</div>
+        <div class="Third">Third Division</div>
+        <div class="Fourth">Fourth Division</div>
+        <div class="Footer">copy right@2025</div>
+    </div>
+</body>
+</html>

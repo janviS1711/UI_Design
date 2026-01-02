@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            background-color: red;
+            width: 200px;
+            height: 200px;
+            transition: all 1s;
+           // transform: rotate(45deg);
+           // transform: scale(0.4);/*It will decrease the size */
+           // transform: skew(20deg);/* It will tilt the box*/
+        }
+        .box:hover{
+            //transform: rotate(180deg) scale(1.3);
+            transform: rotate(45deg) scale(1.3) skew(20deg);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
