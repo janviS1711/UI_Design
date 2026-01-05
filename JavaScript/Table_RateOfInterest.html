@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            border: 2px solid red;
+        }
+        td{
+            text-align: center;
+            border: 1px solid rgb(167, 17, 145);;
+            width: 150px;
+            height: 5px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>javascript</h1>
+    <script>
+     let pamt=prompt("Enter the principal amount");
+     let roi=prompt("Enter the Rate of Interest");
+     let Result=(pamt*roi)/100;
+     document.write("<Table>");
+     document.write("<tr> <td> Principal Amount </td> <td> Rate Of Interest </td> <td> Total Amount </td> </tr>");
+     document.write("<tr> <td>" + pamt + "</td> <td>" + roi + "</td> <td>" + Result + "</td> </tr>");
+     document.write("</Table>");
+    </script>
+</body>
+</html>
