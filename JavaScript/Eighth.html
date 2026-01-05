@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>javascript</h1>
+    <script>
+     let num1=prompt("Enter first number");
+     let num2=prompt("Enter Second number");
+     //let Total=num1*num2; ..This will work
+
+     // let Total=num1+num2;   This Problem comes only with the "+" symbol as we use this as concatination operator.
+     // First no = 15, Second no = 16 => Total = 1516.
+     // This is because Prompt is usefull for taking only String Data types not the numbers.
+
+     let Total=Number(num1) + Number(num2); 
+     // This is how we can Add the numbers using this 'Number' which is an inbuilt function in JS.
+
+     document.write(Total);
+    </script>
+</body>
+</html>
