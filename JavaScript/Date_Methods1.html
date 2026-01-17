@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>JAvaScript</h1>
+    <script>
+        let obj=new Date();
+        let H=obj.getHours(); //Methods {getHours()} cannot be called directly likr functions {Date()}
+        let M=obj.getMinutes();
+        let S=obj.getSeconds();
+
+        let Dt=obj.getDate()
+        let Mth=obj.getMonth()+1
+        let Yr=obj.getFullYear()
+
+        let date=obj.toLocaleDateString()   //Here local spelling is Locale...
+        let Time=obj.toLocaleTimeString()
+        document.write(H + ":" + M + ":" + S + "<br>");
+        document.write(Dt + "-" + Mth + "-" + Yr + "<br>")
+        document.write(date + "<br>")
+        document.write(Time)
+    </script>
+</body>
+</html>
